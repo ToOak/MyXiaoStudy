@@ -1,0 +1,8 @@
+<text>Hello World</text>
+<button bindtap='clickMe'>click me</button>
+<button bindtap='chooseImg'>choose img</button>
+<view class='container'>
+  <view class='previewimg' wx:for="{{imgList}}" wx:for-item="img">
+    <image src='{{img}}' data-src='{{img}}' bindtap='previewImg'></image>
+  </view>
+</view>

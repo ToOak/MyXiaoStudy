@@ -1,0 +1,7 @@
+{
+  "pages":["pages/index/index"],
+  "window":{
+    "navigationBarBackgroundColor": "#0f0",
+    "navigationBarTitleText": "MyTest"
+  }
+}
