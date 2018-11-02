@@ -1,5 +1,5 @@
 const util = require('../../util/timeUtil.js')
-console.log("pages/index/index.js")
+console.log("pages/home/home.js")
 Page({
 
  /**
