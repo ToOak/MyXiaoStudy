@@ -20,7 +20,7 @@ Page({
   // time: (new Date()).format("yyyy-MM-dd  HH:mm:ss")
   time: util.formatTime(new Date()),
   msg: '当前时间',
-  timeColor:"orange"
+  timeColor: "orange"
  },
 
 
@@ -84,7 +84,12 @@ Page({
   * 生命周期函数--监听页面显示
   */
  onShow: function() {
-
+  var that = this;
+  setInterval(function() {
+   that.setData({
+    time: util.formatTime(new Date())
+   })
+  }, 1000);
  },
 
  /**
@@ -105,7 +110,9 @@ Page({
   * 页面相关事件处理函数--监听用户下拉动作
   */
  onPullDownRefresh: function() {
-
+  setTimeout(function() {
+   wx.stopPullDownRefresh()
+  }, 2000)
  },
 
  /**
@@ -119,6 +126,9 @@ Page({
   * 用户点击右上角分享
   */
  onShareAppMessage: function() {
-
+  return {
+   title: "自定义转发标题",
+   path: "pages/log/log"
+  }
  }
 })
