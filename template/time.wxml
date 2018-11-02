@@ -1,0 +1,6 @@
+<template name="msgItem">
+ <view>
+  <text>{{msg}}：{{time}}\n</text>
+  <text>{{ a === 10? "变量 a 等于10": "变量 a 不等于10"}}\n</text>
+ </view>
+</template>
