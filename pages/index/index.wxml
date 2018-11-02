@@ -1,8 +1,10 @@
-<text>Hello World</text>
+<text>当前时间：{{time}}\n</text>
+<text>{{ a === 10? "变量 a 等于10": "变量 a 不等于10"}}</text>
 <button bindtap='clickMe'>浏览网上图片</button>
 <button bindtap='chooseImg'>选择图片</button>
 <view class='container'>
-  <view class='previewimg' wx:for="{{imgList}}" wx:for-item="img">
+  <view class='previewimg' wx:for="{{imgList}}"
+   wx:for-item="img" wx:key="*this" wx:for-index="i">
     <image src='{{img}}' data-src='{{img}}' bindtap='previewImg'></image>
   </view>
 </view>

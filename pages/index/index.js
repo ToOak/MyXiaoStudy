@@ -1,3 +1,5 @@
+const util = require('../../util/timeUtil.js')
+
 Page({
 
   /**
@@ -13,7 +15,10 @@ Page({
       "./image/img5.png",
       "./image/img6.png",
       './image/rock.gif'
-    ]
+    ],
+    // time:(new Date()).toString()
+   // time: (new Date()).format("yyyy-MM-dd  HH:mm:ss")
+   time: util.formatTime(new Date())
   },
 
 
