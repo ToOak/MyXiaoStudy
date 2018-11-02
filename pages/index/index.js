@@ -1,5 +1,5 @@
 const util = require('../../util/timeUtil.js')
-
+console.log("pages/index/index.js")
 Page({
 
  /**
@@ -19,7 +19,8 @@ Page({
   // time:(new Date()).toString()
   // time: (new Date()).format("yyyy-MM-dd  HH:mm:ss")
   time: util.formatTime(new Date()),
-  msg: '当前时间'
+  msg: '当前时间',
+  timeColor:"orange"
  },
 
 

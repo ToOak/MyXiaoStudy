@@ -1,7 +1,10 @@
 {
-  "pages":["pages/index/index"],
-  "window":{
-    "navigationBarBackgroundColor": "#0f0",
-    "navigationBarTitleText": "MyTest"
-  }
+ "pages": [
+  "pages/index/index",
+  "pages/log/log"
+ ],
+ "window": {
+  "navigationBarBackgroundColor": "#0f0",
+  "navigationBarTitleText": "MyTest"
+ }
 }

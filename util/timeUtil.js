@@ -1,3 +1,4 @@
+console.log("util/timeUtil.js")
 //格式化日期
 Date.prototype.format = function(fmt) {
  var o = {
