@@ -11,7 +11,8 @@ Page({
       "./image/img3.png",
       "./image/img4.png",
       "./image/img5.png",
-      "./image/img6.png"
+      "./image/img6.png",
+      './image/rock.gif'
     ]
   },
 

@@ -1,6 +1,6 @@
 <text>Hello World</text>
-<button bindtap='clickMe'>click me</button>
-<button bindtap='chooseImg'>choose img</button>
+<button bindtap='clickMe'>浏览网上图片</button>
+<button bindtap='chooseImg'>选择图片</button>
 <view class='container'>
   <view class='previewimg' wx:for="{{imgList}}" wx:for-item="img">
     <image src='{{img}}' data-src='{{img}}' bindtap='previewImg'></image>
