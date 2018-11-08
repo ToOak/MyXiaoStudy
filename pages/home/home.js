@@ -25,6 +25,16 @@ Page({
   },
 
 
+  requestNet:function(){
+    wx.request({
+      url: 'https://test.com/getinf',
+      success :function(res){
+        console.log(res)
+      }
+    })
+  },
+
+
   chooseImg: function() {
     var that = this;
     wx.chooseImage({
@@ -138,7 +148,6 @@ Page({
           } else if (res.cancel) {
             wx.showToast({
               title: '已点击取消',
-              icon: "failed",
               duration: 1500
             })
           }
