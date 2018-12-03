@@ -10,4 +10,11 @@
  <view class="usermotto">
   <text class="user-motto">{{motto}}</text>
  </view>
+
+
+ <button bindtap='clickMe'>扫一扫</button>
+ <view class='text'>{{msg}}\n</view>
+ <text>当前位置:</text>
+ <map bindmarkertap='markertap' longitude="{{longitude}}" latitude='{{latitude}}'></map>
+
 </view>

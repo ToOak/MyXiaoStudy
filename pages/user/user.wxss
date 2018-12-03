@@ -30,3 +30,12 @@
 .usermotto {
  margin-top: 200px;
 }
+
+.text {
+ background: burlywood;
+ width: 60%;
+ padding: 10px;
+ /* 文案换行 */
+ word-break: break-all;
+ text-align: center;
+}

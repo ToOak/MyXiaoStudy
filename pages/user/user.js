@@ -8,7 +8,10 @@ Page({
  data: {
   userInfo: {},
   hasUserInfo: false,
-  canIUse: wx.canIUse("button.open-type.getUserInfo")
+  canIUse: wx.canIUse("button.open-type.getUserInfo"),
+
+  longitude: 113.22,
+  latitude: 33.97
  },
 
  /**
@@ -41,6 +44,19 @@ Page({
     }
    })
   }
+
+  wx.getLocation({
+   type: "wgs84",
+   // success: function (res) {
+   success: res => {
+    var tempLatitude = res.latitude //纬度
+    var tempLongitude = res.longitude //纬度
+    this.setData({
+     longitude: tempLongitude,
+     latitude: tempLatitude
+    })
+   },
+  })
  },
 
  /**
@@ -107,5 +123,20 @@ Page({
    userInfo: e.detail.userInfo,
    hasUserInfo: true
   })
- }
+ },
+
+ clickMe: function() {
+  this.setData({
+   msg: "Hello World"
+  })
+  wx.scanCode({
+   success: res => {
+    console.log(res)
+    this.setData({
+     msg: JSON.stringify(res)
+    })
+   }
+  })
+
+ },
 })
