@@ -1,7 +1,8 @@
 {
  "pages": [
   "pages/home/home",
-  "pages/log/log"
+  "pages/log/log",
+  "pages/user/user"
  ],
  "window": {
   "navigationBarBackgroundColor": "#0f0",
@@ -16,6 +17,10 @@
    {
     "text": "log",
     "pagePath": "pages/log/log"
+   },
+   {
+    "text": "user",
+    "pagePath": "pages/user/user"
    }
   ]
  }

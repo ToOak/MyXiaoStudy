@@ -6,7 +6,7 @@
 <button bindtap='clickMe' loading='{{buttonLoading}}' hover-class='button_down'>浏览网上图片</button>
 <button bindtap='chooseImg'>选择图片</button>
 <view class='container'>
-  <view class='previewimg' wx:for="{{imgList}}" wx:for-item="img" wx:key="*this" wx:for-index="i">
-    <image src='{{img}}' mode='aspectFit' data-src='{{img}}' bindtap='previewImg'></image>
-  </view>
+ <view class='previewimg' wx:for="{{imgList}}" wx:for-item="img" wx:key="*this" wx:for-index="i">
+  <image src='{{img}}' mode='aspectFit' data-src='{{img}}' bindtap='previewImg'></image>
+ </view>
 </view>
