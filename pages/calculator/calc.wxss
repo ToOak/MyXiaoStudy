@@ -19,3 +19,20 @@
 .container button {
  width: 80%;
 }
+
+.content {
+ margin: 30rpx 60rpx;
+ /* align-items: center;
+ display: flex;
+ flex-direction: column; */
+}
+
+.content button {
+ width: 80%;
+ /* align-content: center;
+ align-items: center; */
+}
+
+.content view, .content button, .content slider {
+ margin: 20rpx 0;
+}

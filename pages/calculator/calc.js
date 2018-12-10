@@ -7,7 +7,11 @@ Page({
  data: {
   num1: '',
   num2: '',
-  result: ""
+  result: "",
+
+  number1: "",
+  number2: "",
+  result2: ""
  },
 
  bindAdd: function(e) {
@@ -35,6 +39,29 @@ Page({
     num2: n
    })
   }
+ },
+
+ bindSlider1: function(e) {
+  var n = e.detail.value
+  if (!isNaN(n)) {
+   this.setData({
+    number1: n
+   })
+  }
+ },
+ bindSlider2: function(e) {
+  var n = e.detail.value
+  if (!isNaN(n)) {
+   this.setData({
+    number2: n
+   })
+  }
+ },
+ bindAdd2: function(e) {
+  var r = this.data.number1 * 1 + this.data.number2 * 1
+  this.setData({
+   result2: r
+  })
  },
 
  /**

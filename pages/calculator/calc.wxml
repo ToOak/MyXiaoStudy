@@ -1,7 +1,20 @@
 <!--pages/calculator/calc.wxml-->
 <view class='container'>
- <input placeholder='被加数' bindinput='bindInput1' />
- <input placeholder='加数' bindinput='bindInput2' />
+ <input placeholder='被加数' type='number' bindinput='bindInput1' />
+ <input placeholder='加数' type="digit" bindinput='bindInput2' />
  <button type='primary' bindtap='bindAdd'>计算</button>
  <input placeholder='结果' value='{{result}}' disabled/>
+</view>
+
+<view class='content'>
+ <view class='section_title'>被加数</view>
+ <slider min='0' max='1000' bindchange='bindSlider1' show-value/>
+
+ <view class='section_title'>加数</view>
+ <slider min='0' max='1000' bindchange='bindSlider2' show-value/>
+
+ <button type='primary' bindtap='bindAdd2'>计算</button>
+
+ <view class='section_title'>结果</view>
+ <view>{{result2}}</view>
 </view>
