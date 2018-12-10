@@ -113,6 +113,7 @@ Page({
   // TODO 为啥不行？
   wx.navigateTo({
    url: '../log/log'
+   // url:'../button/button'
   })
  },
 

@@ -1,0 +1,21 @@
+/* pages/calculator/calc.wxss */
+
+.container {
+ justify-content: flex-start;
+ padding: 30rpx 0;
+}
+
+.container input {
+ background-color: #eee;
+ border-radius: 3px;
+ text-align: left;
+ width: 680rpx;
+ height: 100rpx;
+ line-height: 100rpx;
+ padding: 0 20rpx;
+ margin: 20rpx;
+}
+
+.container button {
+ width: 80%;
+}

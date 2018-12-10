@@ -1,0 +1,23 @@
+/* pages/button/button.wxss */
+
+.container {
+ align-items: stretch;
+ /* justify-content: flex-start; */
+ background: blanchedalmond;
+ padding: 0;
+ display: flex;
+ /* 纵向排列 */
+ flex-direction: column;
+ margin: 30rpx;
+}
+
+.container button {
+ /* width: 25%; */
+ width: auto;
+ margin: 10rpx;
+}
+
+.my-button-hover {
+ opacity: 0.9; /*透明度变化*/
+ transform: scale(0.9, 0.9); /*缩放*/
+}

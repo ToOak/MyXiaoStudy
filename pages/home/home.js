@@ -68,6 +68,17 @@ Page({
   })
  },
 
+ gotoButton: function(e) {
+  wx.navigateTo({
+   url: '../button/button',
+  })
+ },
+
+ gotoCalculator: function(e) {
+  wx.navigateTo({
+   url: '../calculator/calc',
+  })
+ },
 
  /**
   * 生命周期函数--监听页面加载

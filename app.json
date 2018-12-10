@@ -2,7 +2,9 @@
  "pages": [
   "pages/home/home",
   "pages/log/log",
-  "pages/user/user"
+  "pages/user/user",
+  "pages/button/button",
+  "pages/calculator/calc"
  ],
  "window": {
   "navigationBarBackgroundColor": "#0f0",

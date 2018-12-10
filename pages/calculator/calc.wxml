@@ -1,0 +1,7 @@
+<!--pages/calculator/calc.wxml-->
+<view class='container'>
+ <input placeholder='被加数' bindinput='bindInput1' />
+ <input placeholder='加数' bindinput='bindInput2' />
+ <button type='primary' bindtap='bindAdd'>计算</button>
+ <input placeholder='结果' value='{{result}}' disabled/>
+</view>
