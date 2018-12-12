@@ -11,7 +11,33 @@ Page({
 
   number1: "",
   number2: "",
-  result2: ""
+  result2: "",
+
+  result: "0", //计算结果
+  id1: "history", //历史
+  id2: "clear", //清除（删除所有）
+  id3: "back", //回退（删除最后一个）
+  id4: "div", //除
+  id5: "num_7",
+  id6: "num_8",
+  id7: "num_9",
+  id8: "mul", //乘
+  id9: "num_4",
+  id10: "num_5",
+  id11: "num_6",
+  id12: "sub", //减
+  id13: "num_1",
+  id14: "num_2",
+  id15: "num_3",
+  id16: "add", //加
+  id17: "negative", //取负
+  id18: "num_0",
+  id19: "dot", //小数点
+  id20: "equ" //等号
+ },
+
+ clickButton: function(e) {//单击事件处理函数
+
  },
 
  bindAdd: function(e) {
@@ -31,6 +57,7 @@ Page({
    })
   }
  },
+
  bindInput2: function(e) {
   var n = e.detail.value
   console.info("bindInput2: " + n)
@@ -49,6 +76,7 @@ Page({
    })
   }
  },
+
  bindSlider2: function(e) {
   var n = e.detail.value
   if (!isNaN(n)) {
@@ -57,6 +85,7 @@ Page({
    })
   }
  },
+
  bindAdd2: function(e) {
   var r = this.data.number1 * 1 + this.data.number2 * 1
   this.setData({

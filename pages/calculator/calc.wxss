@@ -21,7 +21,7 @@
 }
 
 .content {
- margin: 30rpx 60rpx;
+ margin: 80rpx 60rpx;
  /* align-items: center;
  display: flex;
  flex-direction: column; */
@@ -35,4 +35,68 @@
 
 .content view, .content button, .content slider {
  margin: 20rpx 0;
+}
+
+.calcContent {
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ box-sizing: border-box;
+ padding-top: 10rpx;
+ padding-bottom: 80rpx;
+}
+
+.screen {
+ background-color: #fff;
+ text-align: right;
+ width: 650rpx;
+ height: 150rpx;
+ line-height: 150rpx;
+ padding: 0 20rpx;
+ margin: 30rpx;
+ border: 1px solid #ddd;
+ border-radius: 3px;
+}
+
+.btnGroup {
+ display: flex;
+ flex-direction: row;
+}
+
+.btnGroup button {
+ width: 160rpx;
+ min-height: 150rpx;
+ margin: 10rpx;
+ border-radius: 6px;
+ text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+ text-align: center;
+ line-height: 150rpx;
+}
+
+/* 控制按钮颜色（橙色） */
+
+.orange {
+ background-color: #f78d1d;
+ color: #fef4e9;
+ border: solid 1px #da7c0c;
+}
+
+/* 控制按钮按下状态 */
+
+.other-button-hover {
+ background-color: red;
+}
+
+/* 数字按钮（蓝色） */
+.blue {
+ background-color: #0095cd;
+ color: #d9eef7;
+ border: solid 1px #0076a3;
+}
+
+/* 数字按钮按下状态 */
+.button-hover-num{
+ background-color: #0094cc;
+ opacity: 0.7;
 }
