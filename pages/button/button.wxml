@@ -26,3 +26,10 @@
     </block>
   </view>
 </view>
+
+<block>
+  <switch checked bindchange='switch1Change' />
+  <text>{{var1}}</text>
+  <switch style='margin-left:150rpx' bindchange='switch2Change' />
+  <text>{{var2}}</text>
+</block>

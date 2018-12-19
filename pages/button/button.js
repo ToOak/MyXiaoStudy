@@ -19,7 +19,24 @@ Page({
     iconType: [
       "success", 'info', "warn", "waiting", "safe_success", "safe_warn", "success_circle", "success_no_circle",
       "waiting_circle", "circle", 'download', "info_circle", "cancel", 'search', "clear"
-    ]
+    ],
+
+    var1: "开",
+    var2: "关"
+  },
+
+  switch1Change: function(e) {
+    console.log("switch1发生change事件，携带值为：", e.detail.value)
+    this.setData({
+      var1: e.detail.value ? "开" : "关"
+    })
+  },
+
+  switch2Change: function(e) {
+    console.log("switch2发生change事件，携带值为：", e.detail.value)
+    this.setData({
+      var2: e.detail.value ? "开" : "关"
+    })
   },
 
   // setDisabled: e => {

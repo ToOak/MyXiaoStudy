@@ -23,6 +23,11 @@
   <view class='screen'>{{result}}</view>
 
   <view class='btnGroup'>
+    <switch checked='{{record}}' bindchange='recordHistory' />
+    <view class='histext'>保存历史记录</view>
+  </view>
+
+  <view class='btnGroup'>
     <!-- <button class='orange' hover-class='other-button-hover' id='{{id1}}' bindtap='clickButton'>历史</button> -->
     <button class='orange' hover-class='other-button-hover' id='{{id1}}' bindtap='clickButton'>
       <icon type='info_circle' size='38' color='purple' class='btnIcon' />
