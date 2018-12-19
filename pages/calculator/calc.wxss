@@ -82,6 +82,16 @@
   border: solid 1px #da7c0c;
 }
 
+.btnIcon {
+  text-align: center;
+  height: 100%;
+  justify-content: center;
+  width: auto;
+  align-content: center;
+  align-self: center;
+  background: rgb(196, 175, 137);
+}
+
 /* 控制按钮按下状态 */
 
 .other-button-hover {

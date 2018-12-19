@@ -23,8 +23,14 @@
   <view class='screen'>{{result}}</view>
 
   <view class='btnGroup'>
-    <button class='orange' hover-class='other-button-hover' id='{{id1}}' bindtap='clickButton'>历史</button>
-    <button class='orange' hover-class='other-button-hover' id='{{id2}}' bindtap='clickButton'>C</button>
+    <!-- <button class='orange' hover-class='other-button-hover' id='{{id1}}' bindtap='clickButton'>历史</button> -->
+    <button class='orange' hover-class='other-button-hover' id='{{id1}}' bindtap='clickButton'>
+      <icon type='info_circle' size='38' color='purple' class='btnIcon' />
+    </button>
+    <!-- <button class='orange' hover-class='other-button-hover' id='{{id2}}' bindtap='clickButton'>C</button> -->
+    <button class='orange' hover-class='other-button-hover' id='{{id2}}' bindtap='clickButton'>
+      <icon type='cancel' size="38" color="red" class='btnIcon' />
+    </button>
     <button class='orange' hover-class='other-button-hover' id='{{id3}}' bindtap='clickButton'>←</button>
     <button class='orange' hover-class='other-button-hover' id='{{id4}}' bindtap='clickButton'>÷</button>
   </view>
@@ -50,7 +56,10 @@
     <button class='orange' hover-class='other-button-hover' id='{{id17}}' bindtap='clickButton'>±</button>
     <button class='blue' hover-class='button-hover-num' id='{{id18}}' bindtap='clickButton'>0</button>
     <button id='{{id19}}' bindtap='clickButton'>.</button>
-    <button class='orange' hover-class='other-button-hover' id='{{id20}}' bindtap='clickButton'>=</button>
+    <!-- <button class='orange' hover-class='other-button-hover' id='{{id20}}' bindtap='clickButton'>=</button> -->
+    <button class='orange' hover-class='other-button-hover' id='{{id20}}' bindtap='clickButton'>
+      <icon type='success_no_circle' size='38' class='btnIcon' />
+    </button>
   </view>
 
 </view>
