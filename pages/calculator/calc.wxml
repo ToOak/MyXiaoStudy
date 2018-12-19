@@ -1,55 +1,55 @@
 <!--pages/calculator/calc.wxml-->
 <view class='container'>
- <input placeholder='被加数' type='number' bindinput='bindInput1' />
- <input placeholder='加数' type="digit" bindinput='bindInput2' />
- <button type='primary' bindtap='bindAdd'>计算</button>
- <input placeholder='结果' value='{{result}}' disabled/>
+  <input placeholder='被加数' type='number' bindinput='bindInput1' />
+  <input placeholder='加数' type="digit" bindinput='bindInput2' />
+  <button type='primary' bindtap='bindAdd'>计算</button>
+  <input placeholder='结果' value='{{result}}' disabled/>
 </view>
 
 <view class='content'>
- <view class='section_title'>被加数</view>
- <slider min='0' max='1000' bindchange='bindSlider1' show-value/>
+  <view class='section_title'>被加数</view>
+  <slider min='0' max='1000' bindchange='bindSlider1' show-value/>
 
- <view class='section_title'>加数</view>
- <slider min='0' max='1000' bindchange='bindSlider2' show-value/>
+  <view class='section_title'>加数</view>
+  <slider min='0' max='1000' bindchange='bindSlider2' show-value/>
 
- <button type='primary' bindtap='bindAdd2'>计算</button>
+  <button type='primary' bindtap='bindAdd2'>计算</button>
 
- <view class='section_title'>结果：{{result2}}</view>
+  <view class='section_title'>结果：{{result2}}</view>
 </view>
 
 <view class='calcContent'>
- <view class='screen'>计算结果</view>
+  <view class='screen'>计算结果</view>
 
- <view class='btnGroup'>
-  <button class='orange' hover-class='other-button-hover'>历史</button>
-  <button class='orange' hover-class='other-button-hover'>C</button>
-  <button class='orange' hover-class='other-button-hover'>←</button>
-  <button class='orange' hover-class='other-button-hover'>÷</button>
- </view>
- <view class='btnGroup'>
-  <button class='blue' hover-class='button-hover-num'>7</button>
-  <button class='blue' hover-class='button-hover-num'>8</button>
-  <button class='blue' hover-class='button-hover-num'>9</button>
-  <button class='orange' hover-class='other-button-hover'>×</button>
- </view>
- <view class='btnGroup'>
-  <button class='blue' hover-class='button-hover-num'>4</button>
-  <button class='blue' hover-class='button-hover-num'>5</button>
-  <button class='blue' hover-class='button-hover-num'>6</button>
-  <button class='orange' hover-class='other-button-hover'>-</button>
- </view>
- <view class='btnGroup'>
-  <button class='blue' hover-class='button-hover-num'>1</button>
-  <button class='blue' hover-class='button-hover-num'>2</button>
-  <button class='blue' hover-class='button-hover-num'>3</button>
-  <button class='orange' hover-class='other-button-hover'>+</button>
- </view>
- <view class='btnGroup'>
-  <button class='orange' hover-class='other-button-hover'>±</button>
-  <button class='blue' hover-class='button-hover-num'>0</button>
-  <button>.</button>
-  <button class='orange' hover-class='other-button-hover'>=</button>
- </view>
+  <view class='btnGroup'>
+    <button class='orange' hover-class='other-button-hover'>历史</button>
+    <button class='orange' hover-class='other-button-hover'>C</button>
+    <button class='orange' hover-class='other-button-hover'>←</button>
+    <button class='orange' hover-class='other-button-hover'>÷</button>
+  </view>
+  <view class='btnGroup'>
+    <button class='blue' hover-class='button-hover-num'>7</button>
+    <button class='blue' hover-class='button-hover-num'>8</button>
+    <button class='blue' hover-class='button-hover-num'>9</button>
+    <button class='orange' hover-class='other-button-hover'>×</button>
+  </view>
+  <view class='btnGroup'>
+    <button class='blue' hover-class='button-hover-num'>4</button>
+    <button class='blue' hover-class='button-hover-num'>5</button>
+    <button class='blue' hover-class='button-hover-num'>6</button>
+    <button class='orange' hover-class='other-button-hover'>-</button>
+  </view>
+  <view class='btnGroup'>
+    <button class='blue' hover-class='button-hover-num'>1</button>
+    <button class='blue' hover-class='button-hover-num'>2</button>
+    <button class='blue' hover-class='button-hover-num'>3</button>
+    <button class='orange' hover-class='other-button-hover'>+</button>
+  </view>
+  <view class='btnGroup'>
+    <button class='orange' hover-class='other-button-hover'>±</button>
+    <button class='blue' hover-class='button-hover-num'>0</button>
+    <button>.</button>
+    <button class='orange' hover-class='other-button-hover'>=</button>
+  </view>
 
 </view>
